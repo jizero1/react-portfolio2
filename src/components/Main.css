@@ -1,0 +1,25 @@
+/* 공통으로 사용되는 속성 */
+.common-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+}
+.main-introduce {
+    background-color: white;
+    padding: 100px;
+    text-align: center;
+}
+.main-introduce-name {
+    font-size: 90px;
+    font-weight: 800;
+}
+.main-introduce-heading {
+    font-size: 50px;
+    font-weight: 800;
+}
