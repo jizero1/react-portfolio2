@@ -30,13 +30,14 @@
     position: absolute;
 }
 .mainLight {
-    width: 0;
-    height: 0;
-    /* background: radial-gradient(circle, rgba(255,255,255,0.8)0%, rgba(255,255,255,0) 100%); */
-    filter: blur(80px);
-    border-left: 250px solid transparent;
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.8)0%, rgba(255,255,255,0) 100%);
+    filter: blur(60px);
+    border-radius: 50%;
+    /* border-left: 250px solid transparent;
     border-right: 250px solid transparent;
-    border-bottom: 430px solid white;
+    border-bottom: 430px solid white; */
     /* z-index: 1; */
     /* position: relative; */
 }
