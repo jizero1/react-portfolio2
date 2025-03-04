@@ -9,6 +9,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(38, 38, 38);
+    /* position: relative; */
 }
 .main-introduce {
     /* background-color: green; */
@@ -21,13 +22,16 @@
     font-weight: 800;
     /* z-index: 99; */
     /* position: absolute; */
-    position: absolute;
+    /* position: absolute; */
 
 }
 .main-introduce-heading {
     font-size: 30px;
     font-weight: 800;
     position: absolute;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    /* z-index: 999; */
 }
 .mainLight {
     width: 800px;
@@ -39,5 +43,5 @@
     border-right: 250px solid transparent;
     border-bottom: 430px solid white; */
     /* z-index: 1; */
-    /* position: relative; */
+    /* position: absolute; */
 }

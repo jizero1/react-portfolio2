@@ -24,7 +24,7 @@ const MainLight = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             duration={0.5}
-            delay={1.5}
+            delay={1}
         >
             <div className="mainLight"></div>
         </MainIntroduceAni>
@@ -35,6 +35,14 @@ const MainIntroduce = () => {
     return (
         <div className="main-introduce common-flex">
             <MainLight></MainLight>
+            <MainIntroduceAni
+                initial={{ opacity: 0}}
+                animate={{ opacity: 1}}
+                duration={1}
+                delay={1.8}
+            >
+                <p className="main-introduce-heading">CHOI JIYOUNG</p>
+            </MainIntroduceAni>
             {/* <p className="main-introduce-name">안녕하세요</p> */}
             {/* <MainIntroduceAni delay={0.8} className="main-introduce-heading">
                 안녕하세요.
