@@ -8,18 +8,35 @@
 .main-container {
     width: 100vw;
     height: 100vh;
-    background-color: grey;
+    background-color: rgb(38, 38, 38);
 }
 .main-introduce {
-    background-color: white;
+    /* background-color: green; */
     padding: 100px;
     text-align: center;
+    /* position: absolute; */
 }
 .main-introduce-name {
-    font-size: 90px;
+    font-size: 40px;
     font-weight: 800;
+    /* z-index: 99; */
+    /* position: absolute; */
+    position: absolute;
+
 }
 .main-introduce-heading {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
+    position: absolute;
+}
+.mainLight {
+    width: 0;
+    height: 0;
+    /* background: radial-gradient(circle, rgba(255,255,255,0.8)0%, rgba(255,255,255,0) 100%); */
+    filter: blur(80px);
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 430px solid white;
+    /* z-index: 1; */
+    /* position: relative; */
 }

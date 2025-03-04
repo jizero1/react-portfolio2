@@ -5,29 +5,43 @@ import Menu from './Menu.js';
 
 
 // framer motion - 메인 소개 화면 문구 띄우기
-const MainIntroduceAni = ({ children, delay, className }) => {
+const MainIntroduceAni = ({ initial, animate, duration, delay, children }) => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay }}
-            className={className}
+            initial={initial}
+            animate={ animate}
+            transition={{ duration, delay}}
         >
-            <p>{children}</p>
+            {children}
         </motion.div>
     )
 }
-// 메인 소개 화면
+
+// 메인 화면 중앙에 불빛 컴포넌트
+const MainLight = () => {
+    return (
+        <MainIntroduceAni 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            duration={0.5}
+            delay={1.5}
+        >
+            <div className="mainLight"></div>
+        </MainIntroduceAni>
+    )
+}
+// 메인 소개 텍스트 컴포넌트
 const MainIntroduce = () => {
     return (
-        <div className="main-introduce">
-            <p className="main-introduce-name">CHOI JIYOUNG</p>
-            <MainIntroduceAni delay={0.8} className="main-introduce-heading">
-                Front-end Developer
+        <div className="main-introduce common-flex">
+            <MainLight></MainLight>
+            {/* <p className="main-introduce-name">안녕하세요</p> */}
+            {/* <MainIntroduceAni delay={0.8} className="main-introduce-heading">
+                안녕하세요.
             </MainIntroduceAni>
-            <MainIntroduceAni delay={1.6} className="main-introduce-heading">
-                PortFolio
-            </MainIntroduceAni>
+            <MainIntroduceAni delay={5} className="main-introduce-heading">
+                프론트엔드 개발자 최지영입니다.
+            </MainIntroduceAni> */}
         </div>
     )
 }
