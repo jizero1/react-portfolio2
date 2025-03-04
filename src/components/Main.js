@@ -33,7 +33,7 @@ const MainIntroduce = () => {
 }
 const Main = () => {
     return (
-        <div className="main-container common-flex">
+        <div id="home" className="main-container common-flex">
             <MainIntroduce/>
             <Menu />
         </div>
