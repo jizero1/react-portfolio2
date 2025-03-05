@@ -4,34 +4,22 @@
     justify-content: center;
     align-items: center;
 }
-.common-nav-margin {
-    margin-left: 12px;
-    margin-right: 12px;
+.common-nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu-container {
+    position: absolute;
+    bottom: 30px;
 }
 
-.menu-container {
-    width: 500px;
-    height: 110px;
-    background-color: blue;
-    border-radius: 100px;
-    position: fixed;
-    top: 50px;
-    left: -450px;
-    /* left: 0px; */
-    cursor: pointer;
-}
-.menu-container:hover {
-    left: -50px;
-    transition: all 1s ease-out;
-}
 .menu-nav {
+    width: 320px;
+    height: 47px;
+    border-radius: 20px;
     list-style: none;
     background-color: white;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 800;
-    /* margin-right: 40px; */
-}
-
-.nav-main {
-
+    cursor: pointer;
 }

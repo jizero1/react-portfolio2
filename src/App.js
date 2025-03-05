@@ -3,7 +3,7 @@ import './App.css';
 // import Menu from './components/Menu.js';
 import Main from './components/Main.js';
 import About from './components/About.js';
-import PortFolio from './components/portfolio.js';
+import Project from './components/Project.js';
 import { motion } from "framer-motion";
 import { Link, Element } from 'react-scroll';
 
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Main/>
       <About/>
-      <PortFolio/>
+      <Project/>
     </div>
   );
 }
