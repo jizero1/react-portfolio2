@@ -9,16 +9,54 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(38, 38, 38);
-    /* position: relative; */
     flex-direction: column;
+
+}
+.main-introduce {
+    width: 100vw;
+    height: 500px;
+    background-color: grey;
+    /* flex-direction: column; */
+    /* position: relative; */
+    /* display: inline-block; */
+    /* display: flex; */
+    position: relative;
+    
 }
 .main-introduce-text {
+    width: 100vw;
     font-size: 40px;
     text-align: center;
     color: white;
     letter-spacing: 2px;
     line-height: 55px;
+    z-index: 2;
+    position: absolute;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* position: absolute; */
+    /* z-index: 2; */
+    transform: translate(-50%, -50%);
 }
+.main-introduce-backText {
+    width: 100vw;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(255, 255, 255,0.2);
+    z-index: 1;
+    /* position: fixed; */
+    position: absolute;
+        /* position: relative; */
+    /* display: inline-block; */
+    transform: translate(-50%, -50%);
+}
+/* .main-introduce-backText {
+    z-index: 1;
+    font-weight: 800;
+    font-size: 80px;
+    color: rgb(255, 255, 255,0.2);
+} */
 .main-introduce-text-name {
     font-weight: 700;
     color: rgb(10, 255, 67);

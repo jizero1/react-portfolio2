@@ -27,11 +27,17 @@ const MainIntroduce = () => {
                 delay="0.5">
                 <p className="main-introduce-text">안녕하세요, <br/> 프론트엔드 개발자 <span className="main-introduce-text-name">최지영</span>입니다.</p>
             </MainIntroduceAni>
-            
+            <MainIntroduceAni
+                initial={{opacity: 0, y: 100}}
+                animate={{opacity: 1, y: 0}}
+                duration="1"
+                delay="1">
+                <p className="main-introduce-backText">Front-end Developer</p>
+            </MainIntroduceAni>
         </div>
     )
 }
-
+// 스크롤 아이콘 
 const MainScrollIcon = () => {
     return (
         <MainIntroduceAni
@@ -39,9 +45,7 @@ const MainScrollIcon = () => {
             animate={{opacity: 1}}
             duration="1"
             delay="2"
-            // className="main-scroll"
         >
-            {/* <p className="main-scroll">dd</p> */}
             <FaAngleDoubleDown className="main-scroll"/>
         </MainIntroduceAni>
     )
