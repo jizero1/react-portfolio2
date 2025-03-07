@@ -11,7 +11,7 @@
  .common-nav:hover {
     border-bottom: 3px solid black;
     padding-bottom: 4px;
-    color: rgb(49, 208, 49);
+    color: rgb(10, 255, 67);
     animation: borderAni;
  }
  @keyframes borderAni {
@@ -26,11 +26,14 @@
 
 .menu-nav {
     width: 300px;
-    height: 45px;
+    height: 42px;
     border-radius: 20px;
-    list-style: none;
+    /* list-style: none; */
     background-color: rgb(255, 255, 255);
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 800;
     cursor: pointer;
+}
+.menu-ul {
+    list-style: none;
 }
