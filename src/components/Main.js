@@ -31,7 +31,7 @@ const MainIntroduce = () => {
                 initial={{opacity: 0, y: 100}}
                 animate={{opacity: 1, y: 0}}
                 duration="1"
-                delay="1">
+                delay="1.5">
                 <p className="main-introduce-backText">Front-end Developer</p>
             </MainIntroduceAni>
         </div>

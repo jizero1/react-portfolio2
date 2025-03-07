@@ -4,24 +4,16 @@
     justify-content: center;
     align-items: center;
 }
-
 .main-container {
     width: 100vw;
     height: 100vh;
     background-color: rgb(38, 38, 38);
     flex-direction: column;
-
 }
 .main-introduce {
     width: 100vw;
     height: 500px;
-    background-color: grey;
-    /* flex-direction: column; */
-    /* position: relative; */
-    /* display: inline-block; */
-    /* display: flex; */
     position: relative;
-    
 }
 .main-introduce-text {
     width: 100vw;
@@ -32,48 +24,28 @@
     line-height: 55px;
     z-index: 2;
     position: absolute;
-    /* display: inline-block; */
-    /* position: relative; */
-    /* position: absolute; */
-    /* z-index: 2; */
     transform: translate(-50%, -50%);
 }
 .main-introduce-backText {
-    width: 100vw;
+    width: 1000px;
     text-align: center;
-    font-size: 80px;
+    font-size: 120px;
     font-weight: 800;
     color: rgb(255, 255, 255,0.2);
     z-index: 1;
-    /* position: fixed; */
     position: absolute;
-        /* position: relative; */
-    /* display: inline-block; */
     transform: translate(-50%, -50%);
 }
-/* .main-introduce-backText {
-    z-index: 1;
-    font-weight: 800;
-    font-size: 80px;
-    color: rgb(255, 255, 255,0.2);
-} */
 .main-introduce-text-name {
     font-weight: 700;
     color: rgb(10, 255, 67);
 }
 .main-scroll {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     color: white;
-    /* width: 100vw; */
-    /* height: 50px; */
     position: absolute;
     bottom: 50px;
     font-size: 40px;
-    /* background-color: blue; */
     animation: scrollAni 1.5s ease-in-out infinite;
-    /* transition: animation 1s ease-in-out infinite; */
 }
 @keyframes scrollAni {
     0% {
@@ -89,6 +61,4 @@
 .main-scroll-icon {
     font-size: 30px;
     color: white;
-    /* position: absolute; */
-    /* bottom: 40px; */
 }
