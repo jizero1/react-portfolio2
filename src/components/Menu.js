@@ -17,9 +17,9 @@ const MenuNav = () => {
         className="menu-nav common-flex"
         >
             <ul className="menu-ul common-flex" style={{fontSize: fontSize}}>
-                <li className="nav-home common-nav"><Link to="home" smooth={true} duration={500}>홈</Link></li>
-                <li className="nav-aboutMe common-nav"><Link to="about" smooth={true} duration={500}>자기소개</Link></li>
-                <li className="nav-project common-nav"><Link to="project" smooth={true} duration={500}>프로젝트</Link></li>
+                <li className="nav-home common-nav common-flex"><Link to="home" smooth={true} duration={500}>홈</Link></li>
+                <li className="nav-aboutMe common-nav common-flex"><Link to="about" smooth={true} duration={500}>자기소개</Link></li>
+                <li className="nav-project common-nav common-flex"><Link to="project" smooth={true} duration={500}>프로젝트</Link></li>
             </ul>
             </motion.div>
     )

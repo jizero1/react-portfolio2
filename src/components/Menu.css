@@ -5,14 +5,25 @@
     align-items: center;
 }
 .common-nav {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    /* border-radius: 10px; */
+    height: 28px;
+}
+.nav-home {
+    width: 40px;
+}
+.nav-aboutMe, .nav-project {
+    width: 80px;
 }
  .common-nav:hover {
-    border-bottom: 3px solid black;
-    padding-bottom: 4px;
+    /* border-bottom: 3px solid black; */
+    /* padding-bottom: 4px; */
+    background-color: rgb(38, 38, 38);
     color: rgb(10, 255, 67);
     animation: borderAni;
+    /* width: 100px; */
  }
  @keyframes borderAni {
     0% {
