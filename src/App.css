@@ -2,6 +2,7 @@
   box-sizing: border-box;
     margin: 0;
     padding: 0;
+  overflow-x: hidden; /*가로스크롤 숨기기*/   
 }
 .App {
   /* box-sizing: border-box; */

@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .main-container {
     width: 100vw;
     height: 100vh;
@@ -12,30 +13,36 @@
 }
 .main-introduce {
     width: 100vw;
-    height: 500px;
+    height: 100vh;
     position: relative;
 }
+.main-introduce-text-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: grey; */
+    position: absolute;
+    z-index: 2;
+}
+.main-introduce-backText-container {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    z-index:1;
+}
 .main-introduce-text {
-    width: 100vw;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     color: white;
     letter-spacing: 2px;
     line-height: 55px;
-    z-index: 2;
-    position: absolute;
-    transform: translate(-50%, -50%);
 }
 .main-introduce-backText {
-    width: 1000px;
     text-align: center;
     font-size: 120px;
     font-weight: 800;
     color: rgb(255, 255, 255,0.2);
-    z-index: 1;
-    position: absolute;
-    transform: translate(-50%, -50%);
 }
+
 .main-introduce-text-name {
     font-weight: 700;
     color: rgb(10, 255, 67);

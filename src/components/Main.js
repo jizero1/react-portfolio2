@@ -9,8 +9,8 @@ const MainIntroduceAni = ({ initial, animate, duration, delay, children }) => {
     return (
         <motion.div
             initial={initial}
-            animate={ animate}
-            transition={{ duration, delay}}
+            animate={animate}
+            transition={{duration: duration, delay: delay}}
         >
             {children}
         </motion.div>
@@ -20,20 +20,26 @@ const MainIntroduceAni = ({ initial, animate, duration, delay, children }) => {
 const MainIntroduce = () => {
     return (
         <div className="main-introduce common-flex">
+            <div className="main-introduce-text-container common-flex">
             <MainIntroduceAni
                 initial={{opacity: 0, y: 100}}
                 animate={{opacity: 1, y: 0}}
                 duration="2"
-                delay="0.5">
+                delay="0.5"
+            >
                 <p className="main-introduce-text">안녕하세요, <br/> 프론트엔드 개발자 <span className="main-introduce-text-name">최지영</span>입니다.</p>
             </MainIntroduceAni>
+            </div>
+            <div className="main-introduce-backText-container common-flex">
             <MainIntroduceAni
                 initial={{opacity: 0, y: 100}}
                 animate={{opacity: 1, y: 0}}
                 duration="1"
-                delay="1.5">
+                delay="1.5"
+               >
                 <p className="main-introduce-backText">Front-end Developer</p>
             </MainIntroduceAni>
+            </div>
         </div>
     )
 }
