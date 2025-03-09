@@ -4,6 +4,8 @@ import './App.css';
 import Main from './components/Main.js';
 import About from './components/About.js';
 import Project from './components/Project.js';
+import Skill from './components/Skill.js';
+
 import { motion } from "framer-motion";
 import { Link, Element } from 'react-scroll';
 
@@ -12,6 +14,7 @@ function App() {
     <div className="App">
       <Main/>
       <About/>
+      <Skill/>
       <Project/>
     </div>
   );
