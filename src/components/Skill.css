@@ -7,14 +7,15 @@
 .common-skill-img {
     width: 40px;
     height: 50px;
-    margin-right: 20px;
+    margin-right: 13px;
 }
 .common-skill-text {
-    text-align: center;
-    font-size: 18px;
+    /* text-align: center; */
+    /* font-size: 18px; */
     /* padding-left: 100px; */
     /* padding-bottom: 15px; */
     color: black;
+    letter-spacing: 1px;
 }
 .skill-container {
     width: 100vw;
@@ -40,16 +41,25 @@
     /* padding-left: 70px; */
 }
 .skillImg-container {
-    width: 700px;
+    width: 920px;
     height: 400px;
     background-color: white;
     border-radius: 20px;
+
+    /* padding: 50px; */
+    /* padding-left: 50px; */
+    /* margin-top: 30px; */
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+}
+.skill-list {
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    /* padding: 50px; */
-    padding-left: 50px;
-    /* margin-top: 30px; */
-    margin-top: 10px;
+    /* padding-left: 50px; */
+}
+.skill-name {
+    font-weight: 800;
+    margin-right: 20px;
 }
