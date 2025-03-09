@@ -1,10 +1,6 @@
 import './About.css';
-import { FaBirthdayCake } from "react-icons/fa";
-import { FaSchool } from "react-icons/fa";
-import { FaCertificate } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaPencilAlt } from "react-icons/fa";
+import { FaBirthdayCake, FaSchool, FaCertificate, FaEnvelope, FaGithub, FaPencilAlt } from "react-icons/fa";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 
 // 원형 이모지(이미지)
 const ProfileImg = () => {
@@ -32,7 +28,7 @@ const ProfileText = () => {
 const ProfileIntroduceText = () => {
     return (
         <div className="profile-introduce-container common-flex">
-            <p>머릿속의 아이디어를 화면에 구현할 수 있다는 점에 매력을 느껴 프론트엔드 개발자라는 꿈을 가지게 되었습니다. <br/>
+            <p className="profile-introduce-text">머릿속의 아이디어를 화면에 구현할 수 있다는 점에 매력을 느껴 프론트엔드 개발자라는 꿈을 가지게 되었습니다. <br/>
                 항상 사용자 경험을 최우선으로 생각하며, 직관적이고 접근성 높은 인터페이스를 구현하기 위해 노력합니다. <br/>
                 새로운 기술과 도전을 두려워하지 않으며, 문제 해결 과정에서 성장하는 것을 즐깁니다. <br/>
                 끊임없이 배우고 발전하여 사용자에게 가치를 전달할 수 있는 프론트엔드 개발자가 되겠습니다. <br/>
@@ -42,12 +38,17 @@ const ProfileIntroduceText = () => {
 }
 const About = () => {
     return (
-        <div id="about" className="about-container">
+        <div id="about" className="about-container common-flex">
             <div className="about-profile-container common-flex">
                 <ProfileImg />
                 <ProfileText />
             </div>
-            <ProfileIntroduceText />
+            <div className="about-introduce-container common-flex">
+                <FaQuoteLeft className="about-quoteLeft common-quote"></FaQuoteLeft>
+                <ProfileIntroduceText />
+                <FaQuoteRight className="about-quoteRight common-quote"></FaQuoteRight>
+            </div>
+
 
         </div>
     )

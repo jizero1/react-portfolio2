@@ -12,13 +12,20 @@
 .common-icon {
     margin-right: 10px;
 }
+.common-quote {
+    font-size: 50px;
+    color: white;
+    /* display: flex; */
+}
 
 .about-container {
     width: 100vw;
     height: 100vh;
     background-color: rgb(38, 38, 38);
-    padding: 30px;
-    padding-top: 100px;
+    /* background-color: grey; */
+    /* padding: 100 50 50 50; */
+    /* padding-top: 200px; */
+    flex-direction: column;
 }
 .about-profile-container {
     /* width: 100vw; */
@@ -63,8 +70,27 @@
 
 
 .profile-introduce-container {
-    background-color: green;
+    /* background-color: green; */
     color: white;
     font-size: 18px;
-    margin-top: 60px;
+    margin-top: 100px;
+}
+.profile-introduce-text {
+    text-align: center;
+    line-height: 35px;
+}
+
+.about-quoteLeft {
+    /* height: 200px; */
+    /* background-color: blue; */
+    display: flex;
+    /* padding-bottom: 100px; */
+    margin-right: 40px;
+}
+.about-quoteRight {
+    /* height: 200px; */
+    /* background-color: blue; */
+    /* display: flex; */
+    /* padding-top: 180px; */
+    margin-left: 40px;
 }
