@@ -11,7 +11,7 @@ const MenuNav = () => {
     return (
         <motion.div
         initial={{ opacity: 0, width: 0, fontSize: 0}}
-        animate={{ opacity: 1, width: 300}}
+        animate={{ opacity: 1, width: 340}}
         transition={{duration: 1, delay: 1.5}}
         onAnimationComplete={handleAnimationComplete}
         className="menu-nav common-flex"
@@ -19,6 +19,7 @@ const MenuNav = () => {
             <ul className="menu-ul common-flex" style={{fontSize: fontSize}}>
                 <li className="nav-home common-nav common-flex"><Link to="home" smooth={true} duration={500}>홈</Link></li>
                 <li className="nav-aboutMe common-nav common-flex"><Link to="about" smooth={true} duration={500}>자기소개</Link></li>
+                <li className="nav-skill common-nav common-flex"><Link to="skill" smooth={true} duration={500}>기술</Link></li>
                 <li className="nav-project common-nav common-flex"><Link to="project" smooth={true} duration={500}>프로젝트</Link></li>
             </ul>
             </motion.div>

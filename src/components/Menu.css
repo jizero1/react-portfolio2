@@ -11,6 +11,9 @@
     height: 28px;
 }
 .nav-home {
+    width: 30px;
+}
+.nav-skill {
     width: 40px;
 }
 .nav-aboutMe, .nav-project {
@@ -26,7 +29,7 @@
     z-index: 999;
 }
 .menu-nav {
-    width: 300px;
+    /* width: 400px; */
     height: 42px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
