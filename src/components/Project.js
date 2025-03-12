@@ -28,7 +28,8 @@ const ProjectCard = () => {
                             <p className="projectCard-skill">사용기술 이미지. 가로로 나열</p>
                         </div>
                         {/* 프로젝트 카드의 뒷면 */}
-                        <div className="projectCard-back">
+                        <div className="projectCard-back common-flex">
+                            <p>안녕하세요 뒷면 입니다.</p>
                         </div>
                     </div>
                 </div>
