@@ -6,9 +6,6 @@ import About from './components/About.js';
 import Project from './components/Project.js';
 import Skill from './components/Skill.js';
 
-import { motion } from "framer-motion";
-import { Link, Element } from 'react-scroll';
-
 function App() {
   return (
     <div className="App">

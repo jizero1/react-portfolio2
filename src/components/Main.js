@@ -1,8 +1,17 @@
 import './Main.css';
 import { motion } from "framer-motion";
-// import Memu from './Menu';
 import Menu from './Menu.js';
+import { Link } from 'react-scroll';
 import { FaAngleDoubleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
+
+const MainUpBtn = () => {
+    return (
+      <div className="mainUp-container common-flex">
+        <Link to="home" smooth={true} duration={800}><FaAngleUp/></Link>
+      </div>
+    )
+  }
 
 // framer motion - 메인 소개 화면 문구 띄우기
 const MainIntroduceAni = ({ initial, animate, duration, delay, children }) => {
@@ -62,6 +71,7 @@ const Main = () => {
             <MainIntroduce/>
             <Menu />
             <MainScrollIcon/>
+            <MainUpBtn></MainUpBtn>
         </div>
     )
 }
