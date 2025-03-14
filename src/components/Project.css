@@ -43,55 +43,39 @@
 .projectCard {
     width: 350px;
     height: 480px;
-    background-color: white;
-    border-radius: 30px;
-    cursor: pointer;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
     margin: 20px;
-    padding: 25px;
-    /* position: relative; */
-    /* perspective: 1000px; */
-    perspective: 1000px;
-    /* backface-visibility: visible; */
-}
-.projectCard-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    /* -webkit-transform-style: preserve-3d; */
-    transform-style: preserve-3d;
-  }
-.projectCard-front {
-    /* position: absolute; */
-    /* width: 100%; */
-    /* backface-visibility: hidden; */
-    /* position: absolute; */
-    /* transform: rotateY(180deg); */
-    /* z-index: 1; */
+    overflow: hidden;
 }
+
 .projectCard-front, .projectCard-back {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    /* -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden; */
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.6s ease;
+    border-radius: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.projectCard-front {
+    transform: translateX(0);
+    background-color: white;
 }
 
 .projectCard-back {
+    transform: translateX(100%);
     background-color: green;
-    transform: rotateY(180deg);
-    z-index: -1;
-    font-size: 50px;
 }
 
-.projectCard:hover .projectCard-inner {
-    transform: rotateY(180deg);
+.projectCard:hover .projectCard-front {
+    transform: translateX(-100%);
+}
+
+.projectCard:hover .projectCard-back {
+    transform: translateX(0);
 }
 .projectCard-img {
     width: 100%;
