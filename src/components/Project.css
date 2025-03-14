@@ -34,7 +34,7 @@
     /* height: 90%; */
     width: 70%;
     /* height: 100%; */
-    background-color: blue;
+    /* background-color: blue; */
     /* flex-direction: row; */
     flex-wrap: wrap;
     /* justify-content: space-around; */
@@ -51,43 +51,43 @@
     flex-direction: column; */
     margin: 20px;
     padding: 25px;
-    position: relative;
+    /* position: relative; */
     /* perspective: 1000px; */
     perspective: 1000px;
 }
 .projectCard-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d;
-    /* -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d; */
     transition: transform 0.6s;
-    /* position: relative; */
+    /* -webkit-transform-style: preserve-3d; */
+    transform-style: preserve-3d !important;;
+  }
+.projectCard-front {
+    /* position: absolute; */
+    /* width: 100%; */
+    /* backface-visibility: hidden; */
+    /* position: absolute; */
+    /* transform: rotateY(180deg); */
+    /* z-index: 1; */
 }
 .projectCard-front, .projectCard-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    /* -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-    backface-visibility: hidden; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    backface-visibility: hidden;
     flex-direction: column;
 }
 
-.projectCard-front {
-    background-color: yellow;
-    z-index: 2;
-}
+
 
 .projectCard-back {
     background-color: green;
     transform: rotateY(180deg);
     z-index: 1;
+    font-size: 50px;
 }
 
 .projectCard:hover .projectCard-inner {
@@ -119,3 +119,7 @@
     bottom: 20px;
     z-index: 0;
 }
+
+
+
+
