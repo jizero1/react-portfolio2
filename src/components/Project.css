@@ -54,6 +54,7 @@
     /* position: relative; */
     /* perspective: 1000px; */
     perspective: 1000px;
+    /* backface-visibility: visible; */
 }
 .projectCard-inner {
     position: relative;
@@ -61,7 +62,7 @@
     height: 100%;
     transition: transform 0.6s;
     /* -webkit-transform-style: preserve-3d; */
-    transform-style: preserve-3d !important;;
+    transform-style: preserve-3d;
   }
 .projectCard-front {
     /* position: absolute; */
@@ -75,18 +76,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden; */
     backface-visibility: hidden;
+    display: flex;
     flex-direction: column;
 }
-
-
 
 .projectCard-back {
     background-color: green;
     transform: rotateY(180deg);
-    z-index: 1;
+    z-index: -1;
     font-size: 50px;
 }
 
