@@ -12,10 +12,8 @@
 
 .project-container {
     width: 100vw;
-    /* height: 100vh; */
-    /* height: 1400px; */
+    /* height: 1500px; */
     background-color: rgb(38, 38, 38);
-    /* background-color: blue; */
     flex-direction: column;
 }
 
@@ -25,85 +23,36 @@
     color: rgb(10, 255, 67);
     font-size: 50px;
     font-weight: 800;
-    /* margin-top: 70px; */
     margin-bottom: 70px;
 }
 
-.projectCard-container {
-    /* width: 90%; */
-    /* height: 90%; */
-    width: 70%;
-    /* height: 100%; */
-    /* background-color: blue; */
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-}
 
-.projectCard {
-    width: 350px;
-    height: 480px;
-    margin: 20px;
-    position: relative;
+.projectCard-container {
+    width: 70%;
+    height: 100%;
+    background-color: green;
+    flex-wrap: wrap;
     overflow: hidden;
 }
-
-.projectCard-front, .projectCard-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s ease;
-    border-radius: 30px;
-    padding: 25px;
-    box-sizing: border-box;
-}
-
-.projectCard-front {
-    transform: translateX(0);
+.projectCard-list {
+    width: 400px;
+    height: 500px;
     background-color: white;
-}
-
-.projectCard-back {
-    transform: translateX(100%);
-    background-color: green;
-}
-
-.projectCard:hover .projectCard-front {
-    transform: translateX(-100%);
-}
-
-.projectCard:hover .projectCard-back {
-    transform: translateX(0);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .projectCard-img {
-    width: 100%;
-    height: 200px;
+    width: 350px;
+    height: 220px;
 }
-
 .projectCard-AppImg {
-    width: 80%;
-    height: 230px;
-    /* border: 5px solid rgb(0, 0, 0); */
+    width: 250px;
+    height: 250px;
 }
-
-.projectCard-name {
+.projectCard-projectName {
+    font-size: 18px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
-.projectCard-about {
-    width: 100%;
-    height: 130px;
-    /* background-color: blue; */
-    line-height: 25px;
-}
-.projectCard-skill {
-    position: absolute;
-    bottom: 20px;
-    z-index: 0;
-}
-
-
-
-
