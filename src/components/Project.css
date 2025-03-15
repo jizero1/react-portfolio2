@@ -55,7 +55,10 @@
 .projectCard-name {
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .projectCard-about {
-    
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 25px;
 }
