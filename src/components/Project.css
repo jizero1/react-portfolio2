@@ -30,16 +30,16 @@
 .projectCard-container {
     width: 70%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
     flex-wrap: wrap;
     overflow: hidden;
 }
 .projectCard-list {
-    width: 400px;
+    width: 420px;
     height: 550px;
     background-color: white;
     margin: 20px;
-    padding: 20px;
+    padding: 25px;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -68,13 +68,17 @@
 .projectCard-skillContainer {
     width: 100%;
     height: 60px;
-    background-color: blue;
-    margin-top: 10px;
+    /* background-color: blue; */
+    margin-top: 20px;
 }
 .projectCard-skill {
     /* width: 70px; */
     height: 32px;
-    background-color: green;
+    /* background-color: rgb(190, 45, 190); */
+    /* border: 3px solid rgb(190, 45, 190); */
+    /* border: 3px solid rgb(10, 255, 67); */
+    background-color: rgb(190, 45, 190);
+    color: white;
     font-size: 15px;
     font-weight: 800;
     border-radius: 15px;
