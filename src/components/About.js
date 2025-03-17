@@ -28,7 +28,8 @@ const ProfileText = () => {
 const ProfileIntroduceText = () => {
     return (
         <div className="profile-introduce-container common-flex">
-            <p className="profile-introduce-text">머릿속의 아이디어를 화면에 구현할 수 있다는 점에 매력을 느껴 프론트엔드 개발자라는 꿈을 가지게 되었습니다. <br/>
+            <p className="profile-introduce-text">
+                머릿속의 아이디어를 화면에 구현할 수 있다는 점에 매력을 느껴 프론트엔드 개발자라는 꿈을 가지게 되었습니다. <br/>
                 새로운 프로젝트를 만들 때마다 기존 프로젝트에서 새로 배운 기술들을 활용하거나 부족했던 점들을 보완 해나가며 개발 역량을 쌓았습니다. <br/>
                 개발 도중 문제가 발생하면, 해결을 위해 몇 날 며칠동안 포기하지 않고 고민하였고, 이러한 경험을 통해<br/>
                 또 다른 문제를 마주해도 언제든 해결 할 수 있다는 자신감이 생기게 되었습니다.<br/>
