@@ -46,6 +46,21 @@
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
+}
+.projectCard-listHover {
+    position: absolute;
+    width: 100%;
+    height: 53%;
+    background-color: blue;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+.projectCard-list:hover .projectCard-listHover {
+    opacity: 1;
+    visibility: visible;
 }
 .projectCard-img {
     width: 350px;
