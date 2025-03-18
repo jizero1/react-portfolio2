@@ -56,9 +56,16 @@
     height: 250px;
 }
 .projectCard-name {
-    font-size: 18px;
+    /* background-color: blue; */
+    font-size: 17px;
     font-weight: 700;
     margin-bottom: 20px;
+    /* text-decoration-line: line-through; */
+    text-decoration: 13px line-through rgb(49, 250, 31,0.3);
+    /* position: relative; */
+}
+.projectCard-name::after {
+
 }
 .projectCard-about {
     letter-spacing: 1px;
