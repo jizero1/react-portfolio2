@@ -46,8 +46,8 @@ const ProjectCard = () => {
                         ))}
                     </div>
                     <div className="projectCard-listHover common-flex">
-                        <button><a href={card.pageLink} target='_blank'>자세히 보기</a></button>
-                        <button onClick={() => handleClick(card.gitHubLink)}>GitHub 이동</button>
+                        <button className="common-listBtn"><a href={card.pageLink} target='_blank'>자세히 보기</a></button>
+                        <button className="common-listBtn" onClick={() => handleClick(card.gitHubLink)}>GitHub 이동</button>
                     </div>
                 </div>
             ))}

@@ -9,6 +9,22 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.common-listBtn {
+    width: 110px;
+    height: 42px;
+    border-radius: 15px;
+    border-style: none;
+    margin: 0px 10px 0px 10px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+}
+.common-listBtn a {
+    text-decoration: none;
+    color: black;
+    /* font-weight: 700; */
+}
 
 .project-container {
     width: 100vw;
@@ -51,12 +67,12 @@
 .projectCard-listHover {
     position: absolute;
     width: 100%;
-    height: 53%;
-    background-color: blue;
+    height: 54%;
+    background-color: rgb(38, 38, 38,0.8);
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s;
+    transition: opacity 0.3s;
 }
 .projectCard-list:hover .projectCard-listHover {
     opacity: 1;
